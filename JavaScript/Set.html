@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Set</h1>
+
+    <button onclick="myFunction()">Click</button>
+    <p id="res">
+        Text Changes
+    </p>
+    <script>
+        const integer =new Set();
+        integer.add(10);
+        integer.add(20);
+        integer.add(40);
+        integer.add(50);
+        integer.add(30);
+        let con="";
+        function myFunction(){
+            for(const x of integer){
+                con += x +"<br>";
+            }
+            document.getElementById("res").innerHTML=con;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <p1>Enter First Number: <input type="text" id="t1"></p1><br><br>
+    <p1>Enter Second Number:<input type="text" id="t2"></p1><br><br>
+    <button onclick="check()">Click Me</button>
+    <p id="res"></p>
+    <p id="num"></p>
+
+    <script>
+        function check(){
+            var a= document.getElementById("t1").value;
+            var b= document.getElementById("t2").value;
+             var c=a+b;
+           document.getElementById("num").innerHTML=c;
+            if(document.getElementById("t1").value==document.getElementById("t2").value){
+                document.getElementById("res").innerHTML="Both Numbers are Equal";
+            }else if(document.getElementById("t1").value>document.getElementById("t2").value){
+                document.getElementById("res").innerHTML="First Number is Greater than Second Number"
+            }else{
+                document.getElementById("res").innerHTML="Second Number is Greater than First Number"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

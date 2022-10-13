@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Iterator</h1>
+    
+    <button onclick="myFunction()">Click Me</button><br><br>
+    <p1 id="res"></p1><br><br>
+    <p1>Iterating array</p1><br><br>
+    <p1 id="res1"></p1><br><br>
+
+    <script>
+        function myFunction(){
+            const length="Mani Ratnam";
+            const array=[1,5,6,8,50];
+            let test="";
+            let add="";
+            for(const x of length){
+                 test += x;
+            }
+            document.getElementById("res").innerHTML=test;
+
+            for(const x of array){
+                 add += x+ "<br>";
+            }
+            document.getElementById("res1").innerHTML=add;
+        }
+    </script>
+</body>
+</html>

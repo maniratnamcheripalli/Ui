@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert String to Number</h1>
+    <p id="str"></p>
+    <p id="str1"></p>
+    <p id="str2"></p>
+    <h1>Convert Number to String</h1>
+    <p id="num"></p>
+    <p id="num1"></p>
+    <p id="num2"></p>
+    <h1>Convert Bollean to String and Number</h1>
+    <p id="boll"></p>
+    <p id="boll1"></p>
+    <p id="boll2"></p>
+
+
+    <script>
+        let x=10;
+        let s="20.6597";
+        let y=true;
+         document.getElementById("str").innerHTML=typeof s;
+        a=parseFloat(s);
+        b=parseInt(s);
+        //document.getElementById("str").innerHTML=parseInt(s);
+        document.getElementById("str1").innerHTML=a+"  "+typeof a;
+        document.getElementById("str2").innerHTML=b+"  "+ typeof b;
+        document.getElementById("num").innerHTML=typeof x;
+        d=String(x);
+        document.getElementById("num1").innerHTML=d+"  "+ typeof d;
+        e=x.toString();
+        document.getElementById("num2").innerHTML=e+"  "+ typeof e;
+
+        document.getElementById("boll").innerHTML= typeof y;
+        f=String(y);
+        document.getElementById("boll1").innerHTML=f+"  "+ typeof f;
+        g=Number(y);
+        document.getElementById("boll2").innerHTML=g+"  "+ typeof g;
+
+
+
+
+    
+
+    </script>
+
+
+
+
+</body>
+</html>

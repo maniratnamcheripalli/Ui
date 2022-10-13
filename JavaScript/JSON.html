@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p id="res"></p>
+    <p id="res1"></p>
+    <script>
+        const name=`{"firstname":"Mani","middlename":"Ratnam","lastname":"cheripalli"}`;
+        const va=JSON.parse(name);
+        document.getElementById("res").innerHTML=va.firstname+" "+va.middlename+" "+va.lastname;
+        
+        const group='{"student":[' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" }]}';
+        const grid=JSON.parse(group);
+        document.getElementById("res1").innerHTML=grid.student[0].firstName +" "+grid.student[0].lastName+" <br>"+grid.student[1].firstName;
+    </script>
+</body>
+</html>
